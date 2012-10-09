@@ -12,6 +12,7 @@
   },
     "dependencies": {
         "jspack":"git+ssh://git@github.com:phillro/node-jspack"
+        ,"node.extend":">0.0.1"
     },
   "author": "Phill Rosen, Anthony Doran",
   "license": "BSD"
