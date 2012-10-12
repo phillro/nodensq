@@ -1,4 +1,4 @@
-A node.js implementation of pynsq from https://github.com/bitly/nsq
+A node.js port of pynsq reader from https://github.com/bitly/nsq
 
-Aims to be a straight up port.
+Currently works for reading but not publishing. Very much untested and unfinished.
 
