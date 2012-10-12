@@ -1,6 +1,6 @@
 {
   "name": "nsq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node NSQ client tools",
   "main": "index.js",
   "scripts": {
