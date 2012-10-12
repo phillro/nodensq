@@ -1,3 +1,5 @@
+[![build status](https://secure.travis-ci.org/phillro/nodensq.png)](http://travis-ci.org/phillro/nodensq)
+
 A node.js port of pynsq reader from https://github.com/bitly/nsq
 
 Very much untested and unfinished. Basic reading/publishing works.
