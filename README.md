@@ -14,11 +14,17 @@ Reader example
 
 var NSQReader = require('../lib/nsqreader.js').Reader;
 
-var reader = new NSQReader({
-  task1:function(body){console.log('Task handled:');console.log(body)}}, 'test', 'ch1', {lookupd_http_addresses:['127.0.0.1:4161'], data_method:function (conn, task, message) {
-  console.log(message);
-}})
+var taskFunction = function(message){
+    console.log(message)
+}
+
+var reader = new NSQReader({"task1":taskFunction},
+  'topic',
+  'channel',
+  {lookupd_http_addresses:['127.0.0.1:4161']}
+)
 reader.run();
+
 
 
 Publishing example
@@ -33,7 +39,6 @@ conn.connect();
 conn.on("connect", function () {
   conn.send("  V2");
   var cmd = NSQ.publish('test', "hello ");
-  conn.send(cmd);
-  
+  conn.send(cmd);  
 });
 
