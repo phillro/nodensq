@@ -11,8 +11,8 @@
     "url": "https://github.com/phillro/nodensq"
   },
     "dependencies": {
-        "ref":"0.1.3",
-        "jspack":"git+ssh://git@github.com:phillro/node-jspack"
+        "ref":"0.1.3"
+        ,"jspack":">0"
         ,"node.extend":">0.0.1"
     },
   "author": "Phill Rosen, Anthony Doran",
