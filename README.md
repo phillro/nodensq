@@ -3,10 +3,14 @@ A node.js port of pynsq reader from https://github.com/bitly/nsq
 Very much untested and unfinished. Basic reading/publishing works.
 
 
+Installation
+--------------
+
 npm install nsq
 
 
-Reader example:
+Reader example
+----------------
 
 var NSQReader = require('../lib/nsqreader.js').Reader;
 
@@ -17,7 +21,8 @@ var reader = new NSQReader({
 reader.run();
 
 
-Publishing example:
+Publishing example
+--------------------
 
 var NSQ = require('../lib/nsq.js');
 CONN = require("../lib/conn.js");
